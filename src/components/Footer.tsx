@@ -20,7 +20,7 @@ export default function Footer() {
               alt={SITE_NAME}
               width={200}
               height={120}
-              className="h-16 w-auto object-contain sm:h-20"
+              className="h-22 w-auto object-contain sm:h-26"
               />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/60">
               Alongamento, banho de gel, blindagem e esmaltação em gel.
