@@ -16,12 +16,12 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <Image
-              src="/images/logo/sublogositeSF.PNG"
+              src="/images/logo/sublogositeSF.png"
               alt={SITE_NAME}
-              width={96}
-              height={96}
-              className="h-20 w-20 rounded-full object-contain bg-paper"
-            />
+              width={160}
+              height={80}
+              className="h-16 w-auto object-contain sm:h-20"
+              />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/60">
               Alongamento, banho de gel, blindagem e esmaltação em gel.
             </p>
