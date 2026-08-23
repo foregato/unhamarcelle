@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <Image
-              src="/images/logo/sublogositeSF.png"
+              src="/images/logo/sublogositeSF.PNG"
               alt={SITE_NAME}
               width={96}
               height={96}
