@@ -4,7 +4,13 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* compensa o Header fixo ao usar âncoras */
+  scroll-padding-top: 5.5rem; /* compensa o Header fixo (mobile, h-20) ao usar âncoras */
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 7rem; /* compensa o Header fixo (sm+, h-24) ao usar âncoras */
+  }
 }
 
 body {

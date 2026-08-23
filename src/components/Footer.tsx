@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="border-t border-line bg-ink text-paper">
       <Container className="py-16">
         <div className="grid gap-12 md:grid-cols-2">
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <Image
               src="/images/logo/sublogositeSF.png"
               alt={SITE_NAME}
@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <div>
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-paper/40">
               Links rápidos
             </p>

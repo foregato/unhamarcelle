@@ -29,7 +29,7 @@ export default function Header() {
       )}
     >
       {/* Header principal */}
-      <Container className="relative flex h-20 items-center justify-center">
+      <Container className="relative flex h-20 items-center justify-center sm:h-24">
         {/* Logo */}
         <a href="#hero" className="flex items-center justify-center">
           <Image
@@ -38,7 +38,7 @@ export default function Header() {
             width={220}
             height={70}
             priority
-            className="h-18 w-auto object-contain sm:h-24"
+            className="h-14 w-auto object-contain sm:h-20"
           />
         </a>
         {/* Navegação desktop */}
