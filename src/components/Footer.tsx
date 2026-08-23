@@ -18,8 +18,8 @@ export default function Footer() {
             <Image
               src="/images/logo/sublogositeSF.png"
               alt={SITE_NAME}
-              width={160}
-              height={80}
+              width={200}
+              height={120}
               className="h-16 w-auto object-contain sm:h-20"
               />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-paper/60">
