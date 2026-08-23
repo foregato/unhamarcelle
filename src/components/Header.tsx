@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Container from "@/components/Container";
@@ -6,21 +7,25 @@ import Icon from "@/components/Icon";
 import Button from "@/components/Button";
 import { NAV_LINKS, SITE_NAME, WHATSAPP_URL } from "@/lib/constants";
 import { cn } from "@/utils/cn";
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
   return (
     <header
       className={cn(
@@ -28,21 +33,19 @@ export default function Header() {
         scrolled ? "shadow-[0_1px_0_0_theme(colors.line)]" : ""
       )}
     >
-      {/* Header principal */}
-      <Container className="relative flex h-20 items-center justify-center sm:h-24">
-        {/* Logo */}
-        <a href="#hero" className="flex items-center justify-center">
+      <Container className="flex h-20 items-center justify-between gap-4">
+        <a href="#hero" className="flex shrink-0 items-center">
           <Image
             src="/images/logo/logoprincipalsiteSF.png"
             alt={SITE_NAME}
-            width={220}
-            height={70}
+            width={280}
+            height={90}
             priority
-            className="h-14 w-auto object-contain sm:h-20"
+            className="h-[4.5rem] w-auto max-w-[200px] object-contain sm:h-24 sm:max-w-[260px]"
           />
         </a>
-        {/* Navegação desktop */}
-        <nav className="absolute left-0 hidden items-center gap-8 lg:flex">
+
+        <nav className="hidden items-center gap-6 lg:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -53,8 +56,8 @@ export default function Header() {
             </a>
           ))}
         </nav>
-        {/* WhatsApp desktop */}
-        <div className="absolute right-0 hidden lg:block">
+
+        <div className="hidden lg:block">
           <Button
             href={WHATSAPP_URL}
             target="_blank"
@@ -65,24 +68,23 @@ export default function Header() {
             Falar no WhatsApp
           </Button>
         </div>
-        {/* Menu mobile */}
+
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="absolute right-0 grid h-10 w-10 place-items-center rounded-full border border-ink/15 text-ink lg:hidden"
+          className="grid h-10 w-10 place-items-center rounded-full border border-ink/15 text-ink lg:hidden"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
         >
           <Icon name={open ? "close" : "menu"} />
         </button>
       </Container>
+
       {/* Menu mobile */}
       <div
         className={cn(
           "grid overflow-hidden bg-paper transition-[grid-template-rows] duration-300 ease-out lg:hidden",
-          open
-            ? "grid-rows-[1fr] border-t border-line"
-            : "grid-rows-[0fr]"
+          open ? "grid-rows-[1fr] border-t border-line" : "grid-rows-[0fr]"
         )}
       >
         <div className="min-h-0">
