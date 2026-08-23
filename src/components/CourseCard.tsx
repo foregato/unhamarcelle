@@ -15,6 +15,7 @@ export default function CourseCard({ course }: CourseCardProps) {
       <p className="mt-2 text-sm leading-relaxed text-mist">
         {course.description}
       </p>
+      <p className="mt-3 text-sm font-semibold text-rose">{course.price}</p>
     </div>
   );
 }
