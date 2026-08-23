@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   description:
     "Marcelle Pacheco Nails — Nail Designer especializada em alongamento de unhas, banho de gel, blindagem e esmaltação em gel. Agende seu horário e conheça os cursos.",
   icons: {
-    icon: "/images/logo/logo-placeholder.svg",
-    apple: "/images/logo/logo-placeholder.svg",
+    icon: "/images/logo/logoprincipalsiteSF.png",
+    apple: "/images/logo/sublogositeSF.png",
   },
 };
 
