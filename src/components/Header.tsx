@@ -36,7 +36,7 @@ export default function Header() {
       <Container className="flex h-20 items-center justify-between">
         <a href="#hero" className="flex items-center">
           <Image
-            src="/images/logo/logo-horizontal.jpeg"
+            src="/images/logo/logoprincipalsiteSF.png"
             alt={SITE_NAME}
             width={220}
             height={70}

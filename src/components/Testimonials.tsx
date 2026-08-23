@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
 import Container from "@/components/Container";
@@ -33,7 +31,7 @@ export default function Testimonials() {
 
               {/* Rodapé com estrelas, foto de perfil e nome */}
               <div className="p-5">
-                {item.rating && (
+                {!!item.rating && item.rating > 0 && (
                   <div className="mb-3 flex gap-1">
                     {Array.from({ length: item.rating }).map((_, i) => (
                       <span key={i} className="text-rose">

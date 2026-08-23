@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <Image
-              src="/images/logo/logo-circular.jpeg"
+              src="/images/logo/sublogositeSF.png"
               alt={SITE_NAME}
               width={96}
               height={96}
@@ -63,14 +63,20 @@ export default function Footer() {
           </p>
 
           {/* Crédito do desenvolvedor — discreto, deve permanecer em todas as páginas */}
-          <a
-            href={DEVELOPER_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] text-paper/30 opacity-60 transition-opacity duration-300 hover:text-rose hover:opacity-100"
-          >
-            Desenvolvido por {DEVELOPER_NAME}
-          </a>
+          {DEVELOPER_URL ? (
+            <a
+              href={DEVELOPER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[11px] text-paper/30 opacity-60 transition-opacity duration-300 hover:text-rose hover:opacity-100"
+            >
+              Desenvolvido por {DEVELOPER_NAME}
+            </a>
+          ) : (
+            <span className="text-[11px] text-paper/30 opacity-60">
+              Desenvolvido por {DEVELOPER_NAME}
+            </span>
+          )}
         </div>
       </Container>
     </footer>

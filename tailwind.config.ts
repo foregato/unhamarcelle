@@ -32,7 +32,7 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 20px 45px -25px rgba(26, 26, 46, 0.25)",
-        card: "0 10px 30px -15px rgba(255, 42, 140, 0.25)",
+        card: "0 10px 30px -15px rgba(198, 167, 94, 0.35)",
       },
       keyframes: {
         fadeUp: {

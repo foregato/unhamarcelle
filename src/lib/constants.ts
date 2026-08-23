@@ -27,5 +27,5 @@ export const NAV_LINKS = [
 
 // Crédito do desenvolvedor — deve permanecer em todas as páginas.
 // Alterar os valores abaixo é suficiente para atualizar o link em todo o site.
-export const DEVELOPER_NAME = "[seu nome/empresa]";
+export const DEVELOPER_NAME = "Forecatt";
 export const DEVELOPER_URL = "";
