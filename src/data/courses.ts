@@ -9,7 +9,6 @@ export type Course = {
   id: number;
   icon: IconName;
   name: string;
-  description: string;
   price: string;
   duration: string;
   indicatedFor: string;
@@ -44,8 +43,6 @@ export const courses: Course[] = [
     id: 1,
     icon: "nail",
     name: "Curso de Alongamento VIP Completo",
-    description:
-      "Do zero à construção perfeita no molde F1, com prática completa em um único dia.",
     price: "R$ 1.000,00",
     duration: "1 dia",
     indicatedFor:
@@ -79,8 +76,6 @@ export const courses: Course[] = [
     id: 2,
     icon: "graduationCap",
     name: "Curso de Alongamento VIP Intensivo",
-    description:
-      "Dois dias de imersão: teoria, demonstração e prática real de atendimento em modelo.",
     price: "R$ 1.500,00",
     duration: "2 dias",
     indicatedFor:
@@ -117,8 +112,6 @@ export const courses: Course[] = [
     id: 3,
     icon: "shield",
     name: "Curso de Blindagem e Banho de Gel",
-    description:
-      "Serviços naturais, resistentes e muito procurados no salão, do preparo ao acabamento.",
     price: "R$ 800,00",
     duration: "1 dia",
     indicatedFor:

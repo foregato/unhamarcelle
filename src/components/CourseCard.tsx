@@ -23,8 +23,8 @@ export default function CourseCard({ course }: CourseCardProps) {
       </div>
 
       <h3 className="mt-5 font-display text-lg text-ink">{course.name}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-mist">
-        {course.description}
+      <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-mist">
+        {course.indicatedFor}
       </p>
 
       <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1">

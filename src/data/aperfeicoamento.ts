@@ -5,8 +5,6 @@ export const aperfeicoamentoCourses: Course[] = [
     id: 101,
     icon: "star",
     name: "Aperfeiçoamento VIP Técnico",
-    description:
-      "Treinamento personalizado para corrigir estrutura, acabamento e ganhar segurança na execução.",
     price: "R$ 990,00",
     duration: "1 dia",
     indicatedFor:
@@ -36,8 +34,6 @@ export const aperfeicoamentoCourses: Course[] = [
     id: 102,
     icon: "brush",
     name: "Aperfeiçoamento VIP Intensivo",
-    description:
-      "Dois dias para corrigir falhas, aprimorar a técnica e elevar o nível dos atendimentos.",
     price: "R$ 1.650,00",
     duration: "2 dias",
     indicatedFor:
