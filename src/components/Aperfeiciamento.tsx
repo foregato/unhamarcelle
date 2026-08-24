@@ -4,21 +4,21 @@ import CourseCard from "@/components/CourseCard";
 import Button from "@/components/Button";
 import Icon from "@/components/Icon";
 import { WHATSAPP_URL } from "@/lib/constants";
-import { courses } from "@/data/courses";
+import { aperfeicoamentoCourses } from "@/data/aperfeicoamento";
 
-export default function Courses() {
+export default function Aperfeicoamento() {
   return (
-    <section id="cursos" className="py-24 md:py-32">
+    <section id="aperfeicoamento" className="bg-sky/30 py-24 md:py-32">
       <Container>
         <SectionTitle
-          eyebrow="Formação"
-          title="Cursos"
+          eyebrow="Evolução"
+          title="Cursos de Aperfeiçoamento"
           align="center"
-          description="Do primeiro passo à especialização, para quem quer atuar com segurança."
+          description="Treinamentos personalizados para quem já atua e quer corrigir, refinar e elevar a técnica."
         />
 
-        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {courses.map((course, index) => (
+        <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mx-auto lg:max-w-3xl">
+          {aperfeicoamentoCourses.map((course, index) => (
             <div
               key={course.id}
               className="animate-fadeUp"
@@ -37,7 +37,7 @@ export default function Courses() {
             variant="secondary"
             icon={<Icon name="whatsapp" className="h-4 w-4" />}
           >
-            Saber mais sobre os cursos
+            Saber mais sobre o aperfeiçoamento
           </Button>
         </div>
       </Container>
